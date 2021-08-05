@@ -32,7 +32,7 @@ public class demo {
             }  
         }  
     }  
-	
+	//Creation of new database
 	public static void createNewDatabase(String fileName) {  
 		   
         String url = "jdbc:sqlite:C:\\\\Users\\\\Hi\\\\sqlite-tools-win32-x86-3360000\\\\" + fileName;  
@@ -49,7 +49,7 @@ public class demo {
             System.out.println(e.getMessage());  
         }  
     }  
-	
+	//Creation of new table
 	 public static void createNewTable() {  
 	        // SQLite connection string  
 	        String url = "jdbc:sqlite:C:\\\\Users\\\\Hi\\\\sqlite-tools-win32-x86-3360000\\\\Mydata.db";  
@@ -66,7 +66,7 @@ public class demo {
 	        }  
 	    }  
 	 
-	 
+	 //Insertion of values in table
 	 public static void Insert(String name,String actor,String actress,String director,Integer YOR) {
 		// SQLite connection string  
 	        String url = "jdbc:sqlite:C:\\\\Users\\\\Hi\\\\sqlite-tools-win32-x86-3360000\\\\Mydata.db";  
@@ -88,7 +88,7 @@ public class demo {
 	            System.out.println(e.getMessage());  
 	        }  
 	 }
-	 
+	 //Retrieving all the values of table
 	 public static void selectAll() {
 			// SQLite connection string  
 		        String url = "jdbc:sqlite:C:\\\\Users\\\\Hi\\\\sqlite-tools-win32-x86-3360000\\\\Mydata.db";  
@@ -115,7 +115,7 @@ public class demo {
 		            System.out.println(e.getMessage());  
 		        }  
 		 }
-	 
+	 //retrieving the movies with a particular actor
 	 public static void select(String actorName) {
 			// SQLite connection string  
 		        String url = "jdbc:sqlite:C:\\\\Users\\\\Hi\\\\sqlite-tools-win32-x86-3360000\\\\Mydata.db";  
@@ -146,7 +146,7 @@ public class demo {
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//Performing all the tasks
 		
 		connect();
 		createNewDatabase("Mydata.db");
